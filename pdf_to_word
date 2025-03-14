@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to Word Converter - FileTools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #6C757D;
+            --success-color: #28A745;
+            --background-color: #F8F9FA;
+            --text-color: #2D3E50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+        }
+
+        /* Ads Container */
+        .ads-container {
+            text-align: center;
+            margin: 1rem auto;
+            padding: 1rem;
+            max-width: 1200px;
+        }
+
+        .ad-banner {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1rem;
+            margin: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Main Content */
+        .main-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* Enhanced Button Styles */
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), #357ABD);
+            color: white;
+            box-shadow: 0 4px 6px rgba(74,144,226,0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(74,144,226,0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(74,144,226,0.05);
+        }
+
+        .btn-icon {
+            font-size: 1.2em;
+        }
+
+        /* File Upload Section */
+        .upload-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .upload-area {
+            border: 2px dashed var(--primary-color);
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 2rem 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(74,144,226,0.03);
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Ads Section -->
+    <div class="ads-container">
+        <div class="ad-banner">
+            <!-- Google AdSense Horizontal Banner -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-1234567890123456"
+                data-ad-slot="1234567890"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <!-- Conversion Content -->
+        <div class="upload-card">
+            <h1 style="color: var(--primary-color); margin-bottom: 1.5rem;">PDF to Word Converter</h1>
+            
+            <div class="upload-area" onclick="document.getElementById('file-input').click()">
+                <i class="fas fa-cloud-upload-alt fa-3x" style="color: var(--primary-color);"></i>
+                <h3 style="margin: 1rem 0;">Select or Drop PDF File</h3>
+                <p style="color: var(--secondary-color);">Max file size: 50MB</p>
+                <input type="file" id="file-input" accept=".pdf" hidden>
+            </div>
+
+            <div style="margin: 2rem 0;">
+                <button class="btn btn-primary" onclick="startConversion()">
+                    <i class="fas fa-magic btn-icon"></i>
+                    Convert to Word
+                </button>
+                
+                <div style="margin-top: 1.5rem;">
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-question-circle btn-icon"></i>
+                        Need Help?
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Ad Section -->
+        <div class="ads-container">
+            <div class="ad-banner">
+                <!-- Google AdSense Vertical Banner -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-1234567890123456"
+                    data-ad-slot="0987654321"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Existing conversion script remains the same
+        function startConversion() {
+            // Conversion logic here
+        }
+    </script>
+</body>
+</html>
